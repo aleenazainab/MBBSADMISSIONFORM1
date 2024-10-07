@@ -6,8 +6,12 @@ import UserModel from './Model/User.js';
 import SignupModel from './Model/Signup.js'; 
 import FormModel from './Model/Form.js';
 import bcrypt from 'bcrypt';
+import dotenv from 'dotenv';
 
 const app = express();
+dotenv.config(); 
+console.log('Database URL:', process.env.DATABASE_URL);
+
 
 app.use(bodyParser.json({ limit: '5mb' }));
 app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }));
@@ -18,11 +22,15 @@ app.use(
   })
 );
 
+//const uri = process.env.DATABASE_URL;
+
 const uri = 'mongodb+srv://aleenazainab:aleena123%40@cluster0.zxw1k.mongodb.net/MbbsAdmissionForm?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(uri)
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch((err) => console.error('Error connecting to MongoDB Atlas:', err));
+
+  
 
 // Route to handle login submission
 app.post('/login', async (req, res) => {
@@ -85,6 +93,12 @@ app.post('/submitform', async (req, res) => {
   }
 });
 
-app.listen(5001, () => {
-  console.log('Server is running on port 5001');
+
+const port = process.env.PORT || 5001; // Use environment variable
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+
+
+//app.listen(5001, () => {
+ // console.log('Server is running on port 5001');
 });

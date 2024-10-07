@@ -150,7 +150,7 @@
 
     "extends": [
 
-      "trove-labs",
+      "react-app",
 
       "react-app/jest"
 
