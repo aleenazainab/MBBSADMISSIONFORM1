@@ -1,0 +1,507 @@
+$form-background-color: #fff;
+$form-border-color: #ddd;
+$primary-color: #007bff;
+$hover-color: #0056b3;
+
+.form-container {
+    width: 100%;
+    max-width: 823px;
+    margin: 12px auto;
+    padding: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: $form-background-color;
+    border: 3px solid $form-border-color;
+    .attemptYear-group{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+    .male{
+        font-size: 14px !important;
+    }
+    .attempt-section label{
+display: flex !important;
+font-size: 18px;
+align-items: center;
+gap: 4px;
+white-space: nowrap;
+    }
+    .yesbutton{
+        height: 20px;
+        width: 20px;
+        font-size: 18px;
+    }
+    .newlastdiv{
+    margin-top: 20px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 80px;
+    }
+    .attempt-section{
+        padding-top: 10px;
+        gap: 1px;
+    }
+    .newname{
+        margin-top: 20px !important;
+    }
+    .gender-label{
+        font-size: 18px;
+        font-weight: 600 !important ;
+        padding-bottom: 20px;
+    }
+    .mali{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    //.gender-options{
+
+   // }
+    .labelyy{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .seconddiv{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    .inputclaassss{
+        display: flex;
+    }
+    .label{
+        gap: 20px;
+    }
+.mymaindiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+    .form-header {
+        text-align: center;
+        margin-bottom: 15px; // Reduced margin
+
+        .university-logo {
+            max-width: 125px;
+            height: auto;
+
+            label {
+                font-size: medium;
+            }
+        }
+    }
+
+    .admission-info {
+        text-align: center;
+        margin-bottom: 10px; // Reduced margin
+
+        h1 {
+            font-size: 30px; // Reduced font size
+            margin-bottom: 5px; // Reduced margin
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 20px; // Reduced font size
+            color: #555;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+
+    }
+
+    .upload-section {
+        text-align: center;
+        margin-bottom:0px; // Reduced margin
+
+        .upload-label {
+            display: inline-block;
+            position: relative;
+            width: 140px;
+            height: 140px;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+            // margin-left: 20px;
+          
+
+            .upload-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                // margin-top: 62px;
+            }
+        }}
+
+        .error-message {
+            color: red; 
+            font-size: 0.875rem; 
+            margin-top: 0.25rem; 
+            display: inline-block; 
+            position: relative; 
+        }
+    
+    .form-body {
+        // display: flex;
+        // flex-wrap: wrap;
+        gap: 9px; // Reduced gap
+        padding: 25px;   //so that form corners will not touch the page
+
+        .form-group {
+            flex: 1;
+            min-width: 30%; // Increased min-width for better layout
+            flex-direction: column;
+            padding: 11px; 
+            margin-bottom: 10px; // Reduced margin
+
+          
+
+            //&.full-width {
+                // min-width: 80%; 
+                //width:auto;
+           // }
+            
+
+            //@media (max-width: 768px) {
+              //  min-width: 100%; 
+           // }
+
+            label {
+                font-weight: bold;
+                white-space: nowrap;
+                font-size: 17px;
+            }
+
+            input,
+            select,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                font-size: 14px; // Reduced font size
+                margin-top: 5px;
+                box-sizing: border-box;
+                transition: border-color 0.3s ease;
+                color: black;
+                background-color: #fff;
+                transition: border-color 0.3s ease;
+
+                &:focus {
+                    border-color: $primary-color;
+                    outline: none;
+                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+                }
+                &[readonly], 
+                &:disabled {
+                    color: black; // Keep text color black
+                    background-color: #f0f0f0; // Light gray background for readonly/disabled
+                    opacity: 1; // Remove default opacity
+                }
+            }
+
+            &:last-child {
+                display: flex;
+                justify-content: center; 
+                min-width: 50%; 
+            }
+        }
+
+        .checkbox-group {
+            min-width: 10%; 
+            display: flex;
+            gap: 50px; // Reduced gap
+            flex-direction: row;
+        }
+
+        .attemptYear-group {
+            select {
+                width: 80px; 
+                padding: 5px; 
+                border-radius: 4px; 
+                border: 1px solid #ccc; 
+                font-size: 14px; // Reduced font size
+            }
+        }
+        
+
+        .repeater-section {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px; // Reduced margin
+            width: 100%; 
+
+            label {
+                font-weight: bold;
+                margin-bottom: 5px; // Reduced margin
+            }
+
+            .radio-group {
+                display: flex;
+                gap: 15px; // Reduced gap
+                align-items: center; 
+
+                label {
+                    font-weight: normal;
+                }
+
+                input[type="radio"] {
+                    margin-right: 5px; 
+                }
+            }
+        }
+
+        .gender-label {
+            margin-bottom: 10px; // Reduced margin
+            font-size: 15px;
+        }
+
+        .gender-options {
+            display: flex;
+            align-items: center;
+            gap: 100px; // Reduced gap
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 18px;
+            }
+
+            input[type="radio"] {
+                margin-right: 5px; 
+            }    
+        }
+        .attempt-section {
+            display: flex; 
+            margin-bottom: 12px;
+
+            flex-direction: row; 
+            align-items: flex-start; 
+            gap: 28px; // Reduced gap
+
+    .attempt-section label {
+        display: block;
+        margin-bottom: 5px;
+        gap: 2px;
+        font-size: 12.5px;
+    }
+
+            .subjects-section {
+                margin-top: 10px;
+                padding: 5px 8px;
+                border-radius: 5px;
+                border: 1px solid #000;
+                width: 80%;
+            }
+    }
+
+        .submit-button-group {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            margin-top: 15px; // Reduced margin
+            width: 100%; 
+
+            .submit-button {
+                background-color: #007bff;
+                color: white;
+                padding: 16px 45px;
+                border: none;
+                border-radius: 4px;
+                margin-top: 50px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                margin-bottom: 10px;
+                width: auto;
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+            }
+
+            .success-message {
+                color: green; 
+                font-size: 14px; // Reduced font size
+                text-align: center; 
+            }
+            p{
+                font-size: large;
+                font-weight: 600;
+                margin-top: 15px;
+                color:#0056b3;
+
+            }
+            
+            
+        }
+        input[readonly], select[readonly] {
+            color: #000; /* Sets the text color to black */
+            background-color: #f0f0f0; /* Optional: Adjusts background color */
+        }
+       
+        input:disabled, select:disabled {
+            color: #000; /* Sets the text color to black */
+            background-color: #f0f0f0; /* Optional: Adjusts background color */
+            opacity: 1; /* Removes default opacity applied to disabled elements */
+        }
+        @media print {
+            input,
+            select,
+            textarea {
+                background-color: #fff !important; // Ensure white background
+                color: black !important;            // Ensure black text color
+                //border: 1px solid #ccc !important;  // Ensure consistent border
+            }
+        }
+       
+    }
+
+    .declaration-section {
+        margin-top: 100px; 
+       // margin-bottom:5px;
+      //  margin: 10px; // Reduced margin
+        padding: 20px; // Reduced padding
+        //border: 1px solid #ccc;
+       //border-radius: 20px;
+        background-color: $form-background-color;
+
+        h1 {
+            text-align: center;
+            font-size: 18px; // Reduced font size
+            margin-bottom: 10px; // Reduced margin
+            text-decoration: underline;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 14px; // Reduced font size
+        }
+
+        p {
+            font-size: 13px; // Reduced font size
+            margin-bottom: 10px;
+            padding: 10px;
+            //gap: 10px;
+
+            .student-name,
+            .registration-number {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+        //.agree-checkbox{
+           // padding: 10px;
+           // gap:10px;
+       // }
+        .signature-section {
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 5px; // Reduced margin
+            padding: 10px;
+            gap:20px;
+            
+        }
+        .date-section{
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 2px; // Reduced margin
+            padding: 5px;
+            gap:5px;
+        }
+
+        .declaration-points {
+            margin: 5px 0 15px 15px;
+           
+
+            li {
+                font-size: 12px; // Match font size with the form
+                margin-bottom: 5px;
+                padding: 8px;
+               
+            }
+        }
+
+        .note {
+            font-size: 10px; 
+            color: #555; 
+            margin-bottom: 5px; 
+            margin-top: 5px;
+            padding: 10px;
+        }
+
+
+        .info-field {
+            margin-bottom: 10px;
+            padding: 10px;
+
+            label {
+                font-weight: bold;
+                margin-right: 10px;
+            }
+        }
+        .line {
+            display: inline-block;
+            width: 130px; /* Adjust width as necessary */
+            border-bottom: 1px solid black;
+            margin-left: 10px;
+        }
+
+        .section-separator {
+            margin: 25px 0; // Reduced margin
+            border-top: 2px solid #000;
+           // margin-top: 20px;
+           
+        }
+
+        .button-container {
+           // display: flex;              
+            justify-content: center;    
+            align-items: center;        
+            margin-top: 15px; // Reduced margin
+        }
+
+        .save-button {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+           // justify-content: center; 
+           // margin-top: 15px; 
+            width: auto;               
+            background-color: $primary-color;
+            color: white;
+            padding: 8px 12px; 
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 10px; 
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+    @media print {
+        .pdf-exclude {
+          display: none !important;
+        }
+      }
+      
+}
+
+
