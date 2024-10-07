@@ -74,13 +74,11 @@
 
     "merge-images-horizontally-with-text": "^1.0.2",
 
-    "mongoose": "^8.5.4",
+    "mongoose": "^8.7.0",
 
     "moralis": "2.24.1",
 
     "mssql": "^11.0.1",
-
-    "node-adodb": "^5.0.3",
 
     "nodemailer": "^6.9.15",
 
