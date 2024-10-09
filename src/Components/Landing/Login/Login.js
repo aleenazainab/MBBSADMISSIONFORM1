@@ -45,7 +45,7 @@ const Login = () => {
 
   return (
     <>
-      <section className="main_banner">
+      <section className="login">
         <Link to="/signup" className="signupbutton">
           SIGN UP
         </Link>

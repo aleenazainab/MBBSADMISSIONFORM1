@@ -371,7 +371,7 @@ white-space: nowrap;
     }
 
     .declaration-section {
-        margin-top: 100px; 
+        margin-top: 120px; 
        // margin-bottom:5px;
       //  margin: 10px; // Reduced margin
         padding: 20px; // Reduced padding
@@ -503,5 +503,31 @@ white-space: nowrap;
       }
       
 }
+@media (max-width: 900px) {
+    .form-container {
+        padding: 20px;
+        width: unset;
+
+    }
+    .form-container .mymaindiv {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .form-container .inputclaassss {
+        flex-direction: column;
+    }
+    .form-container .form-body {
+        padding: 0px;
+    }
+    .form-container .form-body .form-group label {
+        font-weight: bold;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+    .form-container .form-body .attempt-section {
+        flex-direction: column !important;
+    }
+}
+
 
 

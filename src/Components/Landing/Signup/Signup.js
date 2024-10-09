@@ -48,6 +48,11 @@ const Signup = () => {
       setErrors({ cnic: "CNIC must be exactly 13 digits." });
       return;
     }
+    if (regnum.length !== 5) {
+      setErrors({ regnum: "Registration number must be exactly 5 digits." });
+      return;
+    }
+  
 
     try {
       const result = await axios.post('http://localhost:5001/signup', { regnum, cnic, password });

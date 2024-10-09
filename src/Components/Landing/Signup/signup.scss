@@ -1,167 +1,176 @@
 .signup {
-    // Optional background image or color
-    // background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(135, 79, 79));
-  
-    .signupbutton {
-      color: #fff;
-      background-image: linear-gradient(to right, rgba(207, 207, 207, 0), rgb(0 0 0));
-      padding: 10px;
-      width: 100px;
-      border: 1px solid #fff;
+  .signupbutton {
+    color: #fff;
+    background-image: linear-gradient(to right, rgba(207, 207, 207, 0), rgb(0 0 0));
+    padding: 10px;
+    width: 100px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .label {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px;
+  }
+
+  .signuppage {
+    border: 1px solid #fff;
+    width: 450px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      padding-top: 20px;
+      font-weight: 500 !important;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    .signupinner {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 15px;
-      position: absolute;
-      //gap:20px;
-     // right: 10px;
-      //top: 10px;
-    }
-  
-    .label {
-      display: flex !important;
-      align-items: center !important;
-      gap: 10px;
-    }
-  
-    .signuppage {
-      border: 1px solid #fff;
-      width: 450px;
-      height: auto;
-      margin:  auto;
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 20px;
-      //gap:100px;
-  
-      h1 {
-        font-size: 24px;
-        text-align: center;
-        padding-top: 20px;
-        font-weight: 500 !important;
-      }
-  
-      p {
-        font-size: 12px;
-      }
-  
-      .signupinner {
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 35px;
+      padding: 25px;
+
+      .inputdivvvv {
         display: flex;
         flex-direction: column;
-        gap: 25px;
-        margin-top: 35px;
-        padding: 25px;
-  
-        .inputdivvvv {
-          display: flex;
-          flex-direction: column;
-          gap: 13px;
-          width: 100%;
-
-          position: relative;
-        }
-  
-        input {
-          border: 1px solid grey;
-          padding: 10px;
-          border-radius: 8px;
-          width: 100%;
-          outline: none;
-          
-        }
-  
-        ::placeholder {
-          font-size: 12px;
-          color: grey;
-        }
-  
-        .checkbox-button__input {
-          width: 14px;
-          height: 14px;
-        }
-  
-        button {
-          color: #fff;
-          background-image: linear-gradient(to right, rgba(207, 207, 207, 0), rgb(0 0 0));
-          padding: 15px;
-          width: 100px;
-          border: 1px solid #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto;
-          margin-top: 21px;
-          border-radius: 20px;
-          cursor: pointer; 
-          //color:aqua;
-          
-        }
-  
-        .forchec {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
-  
-        .upperdiv {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-  
-        .checkbox-button__label {
-          font-size: 12px;
-          padding-left: 10px;
-        }
-  
-        .freshmain {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 20px;
-        }
-  
-        .appper {
-          font-size: 16px;
-          font-weight: 500;
-        }
-  
-        .mycheckbox {
-          height: 20px;
-          width: 20px;
-        }
-  
-        .repeatmain {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-        }
-  
-        .error-inline {
-          color: red;
-          font-size: 12px;
-          margin-top: 4px;
-        }
- .password-container input {
-      padding-right: 35px; /* Add extra padding for the eye icon */
-    }
-
-    .eye-icon {
-      position: absolute;
-      right: 10px; // Adjust based on the desired spacing from the right edge
-      top: 70%; 
-      transform: translateY(-50%); // Center vertically within the input
-      cursor: pointer;
-      font-size: 1.2em;
-      color: #333;
-      opacity: 0.7;
-  
-      &:hover {
-        opacity: 1;
+        gap: 13px;
+        width: 100%;
+        position: relative;
       }
-    }
 
+      input {
+        border: 1px solid grey;
+        padding: 10px;
+        border-radius: 8px;
+        width: 100%;
+        outline: none;
+      }
+
+      ::placeholder {
+        font-size: 12px;
+        color: grey;
+      }
+
+      .checkbox-button__input {
+        width: 14px;
+        height: 14px;
+      }
+
+      button {
+        color: #fff;
+        background-image: linear-gradient(to right, rgba(207, 207, 207, 0), rgb(0 0 0));
+        padding: 15px;
+        width: 100px;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 21px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .forchec {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .upperdiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .checkbox-button__label {
+        font-size: 12px;
+        padding-left: 10px;
+      }
+
+      .freshmain, .repeatmain {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .error-inline {
+        color: red;
+        font-size: 12px;
+        margin-top: 4px;
+      }
+
+      .password-container input {
+        padding-right: 35px;
+      }
+
+      .eye-icon {
+        position: absolute;
+        right: 10px;
+        top: 70%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 1.2em;
+        color: #333;
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
-  
+
+ /* @media (max-width: 768px) {
+    .signuppage {
+      width: 100% !important;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    p, .checkbox-button__label, .error-inline {
+      font-size: 10px;
+    }
+
+    .signupinner {
+      padding: 15px;
+      gap: 15px;
+    }
+
+    button {
+      width: 80%;
+      padding: 10px;
+    }
+  }
+*/
+}
+@media (max-width: 900px) {
+  .signup .signuppage {
+width: unset !important;
+margin:20px;
+//padding: 10px;
+//gap: 1px;
+}
+}
