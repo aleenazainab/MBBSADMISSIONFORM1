@@ -22,7 +22,7 @@ const Endpage = () => {
         <div className="endpage-container">
             <FaCheckCircle className="check-icon" />
             <h1>Your form has been successfully submitted!</h1>
-            <h3>Print the downloaded form and submit it to your college</h3>
+            <h3>"Print the downloaded form, also attach your passport-size picture to it, and submit it to your college."</h3>
         </div>
     );
 };
