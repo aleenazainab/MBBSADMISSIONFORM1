@@ -107,6 +107,25 @@ const Form = () => {
         }
 
         if (name === 'dob') {
+            const date = new Date(value);
+            const formattedDob = date.toLocaleDateString('en-GB', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric'
+            });
+        
+            setFormData({
+                ...formData,
+                [name]: value,
+                formattedDob
+            });
+            return;
+        }
+        
+        setFormData({ ...formData, [name]: value });
+    };
+//---------------------------------
+       /* if (name === 'dob') {
             setFormData({
                 ...formData,
                 [name]: value,
@@ -115,7 +134,7 @@ const Form = () => {
             return;
         }
         setFormData({ ...formData, [name]: value });
-    };
+    };*/
 
     const handleCheckboxChange = (event) => {
         const { name, checked } = event.target;
@@ -472,19 +491,37 @@ const Form = () => {
 
 
 
+                
                 <div className='form-group'>
-                    <label>Student's Date of Birth:</label>
-                    <input
-                        type="date"
-                        id="dob"
-                        name="dob"
-                        value={formData.dob}
-                        onChange={handleInputChange}
-                        placeholder='dd/mm/yyyy'
-                        disabled={isSubmitted}
-                    />
-                    {errors.dob && <span className='error-message'>{errors.dob}</span>}
-                </div>
+    <label>Student's Date of Birth(mm/dd/yyyy):</label>
+    <input
+        type="date"
+        id="dob"
+        name="dob"
+        value={formData.dob}
+        onChange={(e) => {
+            const value = e.target.value;
+            const date = new Date(value);
+            const formattedDob = date.toLocaleDateString('en-GB', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric'
+            });
+            
+            setFormData({
+                ...formData,
+                dob: value,                // Store the original value
+                formattedDob: formattedDob // Automatically formatted as dd/mm/yyyy
+            });
+        }}
+        disabled={isSubmitted}
+    />
+    
+    {errors.dob && <span className='error-message'>{errors.dob}</span>}
+</div>
+
+
+
                 </div>
                 <div className='inputclaassss'>
                 <div className='form-group'>
