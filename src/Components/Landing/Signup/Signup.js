@@ -55,7 +55,7 @@ const Signup = () => {
   
 
     try {
-      const result = await axios.post('http://localhost:5001/signup', { regnum, cnic, password });
+      const result = await axios.post('http://3.234.89.154:5001/signup', { regnum, cnic, password });
       console.log(result.data);
 
       setErrors({});
