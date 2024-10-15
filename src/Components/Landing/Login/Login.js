@@ -27,7 +27,7 @@ const Login = () => {
     }
 
     try {
-      const result = await axios.post('http://localhost:5001/login', { regnum, password });
+      const result = await axios.post('http://3.234.89.154:5001/login', { regnum, password });
       console.log("Server Response:", result.data); // Log the response for debugging
 
       // Adjust the destructuring based on the correct response structure
