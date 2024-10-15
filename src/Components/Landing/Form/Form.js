@@ -329,7 +329,7 @@ const Form = () => {
         }
     
         try {
-            const response = await axios.post('http://localhost:5001/submitform', updatedFormData);
+            const response = await axios.post('http://3.234.89.154:5001/submitform', updatedFormData);
             if (response.status === 201) {
                 setSuccessMessage('Form submitted successfully');
                 setErrors({});
