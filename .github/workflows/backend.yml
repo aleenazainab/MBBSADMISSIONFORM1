@@ -24,4 +24,4 @@ jobs:
         run: |
           
           scp -o StrictHostKeyChecking=no -r * ${{ secrets.EC2_INSTANCE_USER }}@${{ secrets.EC2_INSTANCE_IP }}:/home/ubuntu/
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_INSTANCE_USER }}@${{ secrets.EC2_INSTANCE_IP }} 'cd /home/ubuntu/MBBSADMISSIONFORM1 && git pull origin main && pm2 delete 0 2>/dev/null || true && pm2 start npm --name "mbbs" -- run run-backend --spa && exit'
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_INSTANCE_USER }}@${{ secrets.EC2_INSTANCE_IP }} 'cd /home/ubuntu/MBBSADMISSIONFORM1 && git pull origin main && pm2 delete 0 2>/dev/null || true && pm2 start src/route.js --name run-backend --spa && exit'
