@@ -1,0 +1,62 @@
+name: Pipeline Deploy to EC2
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  # Job 1: Checkout code and setup environment
+  setup-environment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+  
+
+  # Job 3: Build Application
+  build:
+    runs-on: ubuntu-latest
+    needs: setup-environment
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies and build
+        run: |
+          npm install 
+          npm run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build/
+
+  # Job 4: Deploy to EC2
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [setup-environment, build]
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          echo -e "StrictHostKeyChecking no\n" >> ~/.ssh/config
+
+      - name: Deploy to EC2
+        run: |
+          
+          scp -o StrictHostKeyChecking=no -r * ${{ secrets.EC2_INSTANCE_USER }}@${{ secrets.EC2_INSTANCE_IP }}:/home/ubuntu/
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_INSTANCE_USER }}@${{ secrets.EC2_INSTANCE_IP }} 'cd /home/ubuntu && pm2 stop mbbs && pm2 start mbbs --spa && exit'
