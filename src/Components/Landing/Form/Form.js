@@ -349,6 +349,7 @@ const Form = () => {
 
 
     const handleSaveAndDownload = async () => {
+         alert("Wait, your form is still downloading.");
         try {
             await generatePDF(); // Wait for the PDF generation to complete
             navigate('/endpage'); // Redirect to end page after generating PDF
