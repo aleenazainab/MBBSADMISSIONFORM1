@@ -736,7 +736,7 @@ const Form = () => {
 
 
 
-                        <p className="note"> Note: Date and Signature must be done after printing the form</p>
+                       
 
                         <div className="signature-section">
                             <div className="date-line">
@@ -789,7 +789,7 @@ const Form = () => {
                             <span className="line"></span>
                         </div>
 
-                        <p className="note"> Note: Date and Signature must be done after printing the form</p>
+                       
                         <div className="signature-section">
                             <div className="date-input">
                                 <label htmlFor="declaration-date">Date:</label>
