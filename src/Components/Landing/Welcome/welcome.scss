@@ -27,7 +27,14 @@
       color: blue;
       margin-top: 30px;
     }
-  
+  .instructions {
+      font-size: 1rem; /* Responsive font size */
+      color: #000; /* Use hex color for consistency */
+      margin-top: 30px;
+      padding-left: 20px; /* Adds padding for indentation */
+      line-height: 1.4; /* Improves readability */
+      list-style-type: disc; /* Adds bullet points for <ul> */
+    }
     .next-button {
       display: inline-block;
       margin-top: 20px;
