@@ -455,7 +455,8 @@ white-space: nowrap;
         }
         .studentline{
             display: inline-block;
-            width: 180px; /* Adjust width as necessary */
+            width: auto;
+            min-width: 200px;
             border-bottom: 1px solid black;
             margin-left: 10px;
         }
