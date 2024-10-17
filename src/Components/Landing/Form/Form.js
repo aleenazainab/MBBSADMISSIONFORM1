@@ -772,7 +772,7 @@ const Form = () => {
                         <h3>(For Exam office only)</h3>
                         <div className="info-field">
                             <label htmlFor="student-name">Student Name:</label>
-                            <span className="line">{formData.studentName}</span>
+                            <span className="studentline">{formData.studentName}</span>
                         </div>
 
                         <div className="info-field">
