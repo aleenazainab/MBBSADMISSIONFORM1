@@ -736,7 +736,7 @@ const Form = () => {
 
 
 
-                       
+                        <p className="note"> Note: Date and Signature must be done after printing the form</p>
 
                         <div className="signature-section">
                             <div className="date-line">
@@ -754,7 +754,7 @@ const Form = () => {
                         <h1>HEAD OF INSTITUTION CERTIFICATION</h1>
                         <h3>(For College use only)</h3>
                         <p>I certify that the candidate is eligible in all respects as per Rules & Regulations of PMDC & Air University Islamabad to take the above mentioned examination.</p>
-                        <p className="note"> Note: Date and Signature must be done after printing the form</p>
+                       
                         <div className="date-section">
                             <div className="date-line">
                                 <label htmlFor="declaration-date">Date:</label>
