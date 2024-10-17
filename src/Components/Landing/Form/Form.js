@@ -304,7 +304,7 @@ const Form = () => {
                 return;
             }
 
-            pdf.save('Forms.pdf');
+            pdf.save('Form.pdf');
         } catch (error) {
             console.error('Error generating PDF', error);
         } finally {
