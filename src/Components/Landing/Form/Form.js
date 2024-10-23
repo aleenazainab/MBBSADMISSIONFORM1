@@ -494,7 +494,7 @@ const Form = () => {
 
                 
                 <div className='form-group'>
-    <label>Student's Date of Birth(mm/dd/yyyy):</label>
+    <label>Student's Date of Birth(yyyy/dd/mm):</label>
     <input
         type="date"
         id="dob"
