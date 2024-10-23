@@ -124,17 +124,7 @@ const Form = () => {
         
         setFormData({ ...formData, [name]: value });
     };
-//---------------------------------
-       /* if (name === 'dob') {
-            setFormData({
-                ...formData,
-                [name]: value,
-                formattedDob: new Date(value).toLocaleDateString('en-GB')
-            });
-            return;
-        }
-        setFormData({ ...formData, [name]: value });
-    };*/
+
 
     const handleCheckboxChange = (event) => {
         const { name, checked } = event.target;
