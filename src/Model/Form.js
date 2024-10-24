@@ -29,8 +29,8 @@ const formSchema = new mongoose.Schema({
     institute: { 
         type: String, 
         enum: [
-            '(FMC) Fazaia Medical College Islamabad', 
-            '(FRPMC) Fazaia Ruth Pfau Medical College Karachi'
+            '(FMC) FAZAIA MEDICAL COLLEGE ISLAMABAD', 
+            '(FRPMC) FAZAIA RUTH PFAU MEDICAL COLLEGE KARACHI'
         ],
         required: true 
     },
