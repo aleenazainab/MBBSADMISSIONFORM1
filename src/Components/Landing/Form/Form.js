@@ -561,8 +561,8 @@ style={{ textTransform: 'uppercase' }}
                         disabled={isSubmitted}
                     >
                         <option value="">Select Institute</option>
-                        <option value="(FMC) Fazaia Medical College Islamabad">(FMC) Fazaia Medical College Islamabad</option>
-                        <option value="(FRPMC) Fazaia Ruth Pfau Medical College Karachi">(FRPMC) Fazaia Ruth Pfau Medical College Karachi</option>
+                       <option value="(FMC) FAZAIA MEDICAL COLLEGE ISLAMABAD">(FMC) FAZAIA MEDICAL COLLEGE ISLAMABAD</option>
+                        <option value="(FRPMC) FAZAIA RUTH PFAU MEDICAL COLLEGE KARACHI">(FRPMC) FAZAIA RUTH PFAU MEDICAL COLLEGE KARACHI</option>
                     </select>
                     {errors.institute && <span className='error-message'>{errors.institute}</span>}
                 </div>
