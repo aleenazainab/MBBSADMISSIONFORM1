@@ -459,6 +459,7 @@ const Form = () => {
                             placeholder='Enter Student Name'
                             value={formData.studentName}
                             onChange={handleInputChange}
+                         style={{ textTransform: 'uppercase' }}
                             readOnly={isSubmitted}
                         />
                         {errors.studentName && <span className='error-message'>{errors.studentName}</span>}
@@ -475,6 +476,7 @@ const Form = () => {
                         placeholder='Enter Father Name'
                         value={formData.fatherName}
                         onChange={handleInputChange}
+style={{ textTransform: 'uppercase' }}
                         readOnly={isSubmitted}
                     />
                     {errors.fatherName && <span className='error-message'>{errors.fatherName}</span>}
