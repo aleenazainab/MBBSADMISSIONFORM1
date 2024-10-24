@@ -486,7 +486,7 @@ style={{ textTransform: 'uppercase' }}
 
                 
                 <div className='form-group'>
-    <label>Student's Date of Birth(yyyy/mm/dd):</label>
+    <label>Student's Date of Birth:</label>
     <input
         type="date"
         id="dob"
